@@ -1,0 +1,282 @@
+/* General Body Styling */
+body {
+    background-color: white;
+    background-size: cover;
+    color: black; /* Black text color for better readability */
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #4b0082; /* Dark purple background for navbar */
+    animation: slideInDown 1s ease-in-out; /* Slide-in from top */
+}
+
+.navbar-brand, .nav-link {
+    color: black; /* Black color for brand name and links */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.nav-link:hover {
+    color: black; /* Black color on hover */
+    animation: pulse 0.3s ease-in-out; /* Pulse effect on hover */
+}
+
+/* Header and Footer Styling */
+.header, .footer {
+    background-color: #4b0082; /* Dark purple background */
+    color: black; /* Black text color */
+    text-align: center;
+    padding: 20px;
+    animation: fadeInUp 1.5s ease-in-out; /* Fade-in from bottom */
+}
+.footer{width:1500px;}
+/* Font Styles and Sizes */
+h1, h2, h3 {
+    
+    font-weight: 700; /* Bold font weight */
+    color: black; /* Black color for headers */
+    animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+}
+
+p, .card-text {
+    font-size: 16px; /* Default font size */
+    color: white; /* Black color for text */
+    font-weight: 400; /* Normal font weight */
+    animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+}
+
+.nav-link, .btn-primary {
+    font-size: 14px; /* Font size for links and buttons */
+    color: #ffffff; /* White color */
+    animation: bounceIn 1s ease-in-out; /* Bounce-in animation */
+}
+
+.btn-primary {
+    background-color: #4b0082; /* Dark purple background */
+    color: #ffffff; /* White text color */
+    border: 2px solid #ffffff; /* White border */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Smooth transition for button states */
+}
+
+.btn-primary:hover {
+    background-color: #ffffff; /* White background on hover */
+    color: #4b0082; /* Dark purple text color on hover */
+    border: 2px solid #4b0082; /* Dark purple border on hover */
+    animation: shake 0.5s ease-in-out; /* Shake effect on hover */
+}
+
+/* Search Bar Styling */
+#searchInput {
+    border-radius: 20px;
+    padding: 10px;
+    border: 2px solid #4b0082; /* Dark purple border for input */
+    background-color: #ffffff; /* White background for input */
+    color: black; /* Black text color */
+    animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+}
+
+#searchButton {
+    border-radius: 20px;
+    background-color: #4b0082; /* Dark purple background */
+    color: #ffffff; /* White text color */
+    border: 2px solid #ffffff; /* White border */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Smooth transition */
+    animation: bounceIn 1s ease-in-out; /* Bounce-in animation */
+}
+
+#searchButton:hover {
+    background-color: #ffffff; /* White background on hover */
+    color: #4b0082; /* Dark purple text color on hover */
+    border: 2px solid #4b0082; /* Dark purple border on hover */
+    animation: shake 0.5s ease-in-out; /* Shake effect on hover */
+}
+
+/* Carousel Caption Styling */
+.carousel-caption {
+    background-color: rgba(75, 0, 130, 0.7); /* Semi-transparent dark purple background */
+    padding: 10px;
+    animation: slideInUp 1s ease-in-out; /* Slide-in from bottom */
+    color: white !important; /* Ensures white text color */
+}
+
+/* Ensure the description text color is white in the carousel */
+.carousel-item .carousel-caption p {
+    color: white !important; /* Override any conflicting text color styles */
+}
+
+/* Make sure the carousel controls are white */
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: #ffffff; /* White color for carousel controls */
+    animation: bounceIn 1s ease-in-out; /* Bounce-in animation */
+}
+
+/* Ensure no other styles are conflicting with white text for the carousel items */
+.carousel-item img {
+    width: 100%; /* Full width for images */
+    height: auto; /* Maintain aspect ratio */
+    animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+}
+
+/* Additional CSS for the buttons to remain visually consistent with the page theme */
+.carousel-item .btn-primary {
+    background-color: #4b0082; /* Purple button background */
+    color: #fff; /* White text on the button */
+    border: 2px solid #fff; /* White border */
+}
+
+.carousel-item .btn-primary:hover {
+    background-color: #fff; /* White background on hover */
+    color: #4b0082; /* Dark purple text color on hover */
+    border: 2px solid #4b0082; /* Dark purple border on hover */
+    animation: shake 0.5s ease-in-out; /* Shake effect on hover */
+}
+
+/* Card Styling for Trending News */
+.card {
+    border: none;
+    border-radius: 10px; /* Rounded corners for cards */
+    background-color: #ffffff; /* White background */
+    animation: fadeInUp 1s ease-in-out; /* Fade-in from bottom */
+}
+
+.card-img-top {
+    height: 200px; /* Set a fixed height for images */
+    object-fit: cover; /* Cover the entire area */
+    animation: zoomIn 1s ease-in-out; /* Zoom-in effect */
+}
+
+.card-body {
+    color: white; /* Black text color */
+    animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+}
+
+.card-title {
+    color: #4b0082; /* Dark purple color for card titles */
+    animation: slideInLeft 1s ease-in-out; /* Slide-in from left */
+}
+
+/* Comments Section Styling */
+.comments-section {
+    background-color: #ffffff; /* White background for comments section */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow for depth */
+    animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+}
+
+/* Individual Comment Styling */
+.media {
+    border-bottom: 1px solid #000; /* Black border between comments */
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    animation: fadeInUp 1s ease-in-out; /* Fade-in from bottom */
+}
+
+.media img {
+    border-radius: 50%; /* Circular user images */
+    animation: pulse 1s ease-in-out infinite; /* Pulse effect */
+}
+
+.media-body {
+    color: black; /* Black text color */
+    animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+        animation: fadeInDown 1s ease-in-out; /* Fade-in from top */
+    }
+
+    .carousel-item img {
+        height: auto; /* Adjust image height on smaller screens */
+        animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+    }
+}
+
+.footer {
+    background-color: #6a11cb; /* Purple background */
+    color: black; /* Black text */
+    width: 100%; /* Add padding for better spacing */
+    animation: fadeInUp 1s ease-in-out; /* Fade-in from bottom */
+}
+
+.footer h5 {
+    font-weight: bold;
+    font-size: 1.5rem; /* Increased size for footer headers */
+    color: black; /* Black color for footer headers */
+    animation: slideInLeft 1s ease-in-out; /* Slide-in from left */
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+    animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+}
+
+.footer a {
+    color: black; /* Black color for links */
+    transition: color 0.3s;
+    animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+}
+
+.footer a:hover {
+    color: black; /* Black color on hover */
+    animation: shake 0.5s ease-in-out; /* Shake effect on hover */
+}
+
+/* Responsive Layout for Categories */
+@media (min-width: 576px) {
+    .col-md-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+        animation: fadeInUp 1s ease-in-out; /* Fade-in from bottom */
+    }
+}
+
+/* Keyframes for Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideInDown {
+    from { transform: translateY(-100%); }
+    to { transform: translateY(0); }
+}
+
+@keyframes slideInUp {
+    from { transform: translateY(100%); }
+    to { transform: translateY(0); }
+}
+
+@keyframes slideInLeft {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
+
+@keyframes bounceIn {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-30px); }
+    60% { transform: translateY(-15px); }
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
+     20%, 40%, 60%, 80% { transform: translateX(10px); }
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}

@@ -1,0 +1,122 @@
+/* General body styles */
+body {
+    background-color: white;
+    color: black;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    background-color: white;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* Navigation styles */
+.navbar {
+    background-color: white;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.navbar-brand {
+    color: #f0f0f0;
+}
+
+.nav-link {
+    color: black;
+}
+
+.nav-link.btn-primary {
+    background-color: purple;
+    border: none;
+}
+
+/* Hero section styles */
+.poll-hero {
+    background-color: gray; /* Gray background */
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+    position: relative;
+}
+
+.poll-hero .overlay-text {
+    position: relative;
+    z-index: 1;
+}
+
+.cta-button {
+    background-color: purple;
+    color: white;
+    border: 2px solid purple;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.cta-button:hover {
+    background-color: purple;
+    color: white;
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+}
+
+h1 {
+    color: purple;
+}
+
+/* Polls container styles */
+.polls-container {
+    background-color: white; /* White background for polls */
+    padding: 20px;
+}
+
+/* Poll section styles */
+.poll {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.poll input[type="radio"] {
+    margin-right: 10px;
+}
+
+.poll button {
+    background-color: purple;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.poll button:hover {
+    background-color: darkpurple;
+}
+
+/* Login prompt styles */
+.login-prompt {
+    padding: 20px;
+    text-align: center;
+    background-color: gray; /* Gray background */
+    color: white; /* White text for visibility */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Footer styles */
+.poll-footer {
+    background-color: white;
+    border-top: 1px solid #e0e0e0;
+    padding: 20px;
+    text-align: center;
+}

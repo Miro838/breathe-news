@@ -1,0 +1,128 @@
+ /* Custom Styles */
+ body {
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+.header {
+    color: black;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFD700;
+    position: relative;
+}
+
+.header h1 {
+    font-size: 4em;
+    margin: 0;
+    animation: fadeInUp 2s ease-out;
+}
+
+.header p {
+    font-size: 1.5em;
+    animation: fadeInUp 2s ease-out 0.5s;
+}
+
+.section {
+    padding: 60px 0;
+    background-color: white;
+}
+
+.section h2, .section p {
+    color: black;
+}
+
+.carousel-item {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+}
+
+.carousel-item img {
+    width: 1250px;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.carousel-item .description {
+    color: purple;
+}
+
+.cta-section {
+    background-color: #ddd;
+    color: black;
+    text-align: center;
+    padding: 60px 0;
+    margin-top: 100px;
+}
+
+.cta-section h2 {
+    font-size: 3em;
+    animation: fadeInUp 2s ease-out;
+}
+
+.cta-section p {
+    font-size: 1.5em;
+    animation: fadeInUp 2s ease-out 0.5s;
+}
+
+.cta-section .btn-primary {
+    font-size: 1.2em;
+    background-color: purple;
+    border-color: purple;
+    animation: fadeInUp 2s ease-out 1s;
+    color: white;
+}
+
+.cta-section .btn-primary:hover {
+    background-color: darkviolet;
+}
+
+.footer {
+    background-color: #fff;
+    color: black;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Navbar */
+.navbar {
+    background-color: white;
+    color: black;
+}
+
+.navbar a {
+    color: black;
+}
+
+.navbar a:hover {
+    color: purple;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Set all links to black and purple on hover */
+a {
+    color: black;
+}
+
+a:hover {
+    color: purple;
+}

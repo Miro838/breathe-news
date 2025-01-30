@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    min-height: 100vh; /* Ensure full height */
+    background-color: #f0f0f0;
+}
+.a {
+    width: 100%; /* Adjust width as needed */
+    max-width: 800px; /* Optional: limit maximum width */
+    margin: 20px auto;
+    padding: 20px;
+   
+    background-color: #f0f0f0;
+    text-align: center;
+    /* Ensure padding is included in width */
+}
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.article-meta {
+    margin-bottom: 15px;
+    color: #555;
+}
+.article-meta p {
+    margin: 5px 0;
+}
+img {
+    width: 100%; /* Normal size image */
+    max-width: 600px;
+    height: auto;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+}
+.description {
+    margin-top: 20px;
+    color: #777;
+}
+.divider {
+    margin: 20px 0;
+    border-bottom: 1px solid #ccc;
+}
+.content {
+    text-align: left;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+.comments-section {
+    text-align: left;
+    margin-top: 30px;
+}
+.comment {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.comment p {
+    margin: 0;
+}
+.comment .meta {
+    font-size: 12px;
+    color: #888;
+}
+.comment .actions {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: none;
+}
+.comment:hover .actions {
+    display: block;
+}
+.comment .actions button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #888;
+    font-size: 12px;
+}
+.comment .actions button:hover {
+    color: #000;
+}
+.comment-options {
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    z-index: 1;
+    padding: 5px;
+}
+.comment-options button,
+.comment-options a {
+    display: block;
+    background-color: #6a0dad; /* Purple background */
+    border: none;
+    color: white; /* White text */
+    text-align: center;
+    font-size: 12px;
+    padding: 10px 15px;
+    margin: 5px 0;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    text-decoration: none; /* Remove underline for links */
+}
+.comment-options button:hover,
+.comment-options a:hover {
+    background-color: #8a2be2; /* Darker purple on hover */
+}
+textarea, input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: purple;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+button[type="submit"]:hover {
+    background-color: purple;
+}
+.share-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: purple;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+}
+.share-button:hover {
+    background-color: purple;
+}

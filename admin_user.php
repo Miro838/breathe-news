@@ -3,21 +3,18 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
-
     <title>Dashboard Template</title>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
     <link href="style/dashboard.css" rel="stylesheet">
     <link rel="stylesheet" href="include/a.css">
-    <style>
-     
+    <!-- jQuery and Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</head>
+<style>
         .form-inline .form-control {
             flex: 1 1 auto;
         }
@@ -45,48 +42,58 @@
                 <div class="sidebar-sticky">
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <a class="nav-link <?php if ($page == 'home') { echo 'active'; } ?>" href="admin_polls_dashboard.php">
-                                <i class="fas fa-tachometer-alt"></i> Dashboard <span class="sr-only">(current)</span>
+                            <a class="nav-link <?php if ($page == 'admin_user') { echo 'active'; } ?>" href="admin_user_dashboard.php">
+                                <i class="fas fa-tachometer-alt"></i> Dashboard
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link <?php if ($page == 'manage_media') { echo 'active'; } ?>" href="manage_polls.php">
+                            <a class="nav-link <?php if ($page == 'view_user') { echo 'active'; } ?>" href="view_user.php">
+                                <i class="fas fa-photo-video"></i> View User
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link <?php if ($page == 'pass reset') { echo 'active'; } ?>" href="view_user_profile.php">
+                                <i class="far fa-newspaper"></i> View User Profile
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link <?php if ($page == 'about') { echo 'active'; } ?>" href="manage_about.php">
+                                <i class="fas fa-tags"></i> Manage About Us
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link <?php if ($page == 'faq') { echo 'active'; } ?>" href="manage_faq.php">
+                                <i class="fas fa-tags"></i> Manage FAQ
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link <?php if ($page == 'main_dashboard') { echo 'active'; } ?>" href="admin_main_dashboard.php">
+                                <i class="fas fa-file-alt"></i> Main Dashboard
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link <?php if ($page == 'quiz') { echo 'active'; } ?>" href="quiz_dashboard.php">
+                                <i class="fas fa-photo-video"></i> Manage Quiz
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link <?php if ($page == 'polls') { echo 'active'; } ?>" href="admin_polls_dashboard.php">
                                 <i class="fas fa-photo-video"></i> Manage Polls
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link <?php if ($page == 'news') { echo 'active'; } ?>" href="admin_dashboard_hiringoffer.php">
-                                <i class="far fa-newspaper"></i> Manage Hiring Offers
+                            <a class="nav-link <?php if ($page == 'hiring_offer') { echo 'active'; } ?>" href="admin_dashboard_hiringoffer.php">
+                                <i class="fas fa-photo-video"></i> Manage Hiring Offer
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link <?php if ($page == 'categories') { echo 'active'; } ?>" href="admin_main_dashboard.php">
-                                <i class="fas fa-tags"></i> Main Dashboard
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link <?php if ($page == 'user_activity') { echo 'active'; } ?>" href="admin_user_dashboard.php">
-                                <i class="fas fa-chart-line"></i> Manage User
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link <?php if ($page == 'articles') { echo 'active'; } ?>" href="quiz_dashboard.php">
-                                <i class="fas fa-file-alt"></i> Manage Quiz
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link <?php if ($page == 'manage_shows') { echo 'active'; } ?>" href="admin_dashboard_hiringoffer.php">
-                                <i class="fas fa-photo-video"></i> Manage Hiring Offers
-                            </a>
-                        </li>
-                       
                     </ul>
-                    
+
                     <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
                         <span></span>
-                        <a class="d-flex align-items-center text-muted" href="#">
+                        <a href="#">
                             <i class="fas fa-plus-circle"></i>
                         </a>
+                    </h6>
                     
                 </div>
             </nav>

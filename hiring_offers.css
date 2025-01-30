@@ -1,0 +1,123 @@
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main Container */
+.hiring-offers-container {
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f0f0f0; /* Gray color */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+.custom-heading {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Card Styles */
+.custom-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 20px;
+    transition: box-shadow 0.3s ease;
+}
+
+.custom-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.custom-card-body {
+    padding: 20px;
+}
+
+.custom-card-title {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.custom-card-subtitle {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.custom-card-text {
+    font-size: 0.875rem;
+    color: #444;
+}
+
+/* Button Styles */
+.custom-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.custom-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.custom-btn-secondary {
+    background-color: #6c757d;
+}
+
+.custom-btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+/* Modal Styles */
+.modal-content {
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.modal-header {
+    border-bottom: none;
+    padding-bottom: 15px;
+}
+
+.modal-footer {
+    border-top: none;
+    padding-top: 15px;
+}
+
+.modal-title {
+    font-size: 1.25rem;
+    color: #333;
+}
+
+.modal-body {
+    font-size: 0.875rem;
+    color: #555;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .custom-card {
+        margin-bottom: 15px;
+    }
+}

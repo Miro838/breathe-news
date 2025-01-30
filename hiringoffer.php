@@ -17,7 +17,6 @@
     <link href="style/dashboard.css" rel="stylesheet">
     <link rel="stylesheet" href="include/a.css">
     <style>
-     
         .form-inline .form-control {
             flex: 1 1 auto;
         }
@@ -45,41 +44,49 @@
                 <div class="sidebar-sticky">
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <a class="nav-link <?php if ($page == 'home') { echo 'active'; } ?>" href="admin_polls_dashboard.php">
-                                <i class="fas fa-tachometer-alt"></i> Dashboard <span class="sr-only">(current)</span>
+                            <a class="nav-link <?php if ($page == 'home') { echo 'active'; } ?>" href="admin_dashboard_hiringoffer.php">
+                                <i class="fas fa-tachometer-alt"></i>
+                                Dashboard <span class="sr-only">(current)</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link <?php if ($page == 'manage_media') { echo 'active'; } ?>" href="manage_polls.php">
-                                <i class="fas fa-photo-video"></i> Manage Polls
+                            <a class="nav-link <?php if ($page == 'manage_media') { echo 'active'; } ?>" href="manage_joboffer.php">
+                                <i class="fas fa-photo-video"></i>
+                                Manage jobs
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link <?php if ($page == 'news') { echo 'active'; } ?>" href="admin_dashboard_hiringoffer.php">
-                                <i class="far fa-newspaper"></i> Manage Hiring Offers
+                            <a class="nav-link <?php if ($page == 'news') { echo 'active'; } ?>" href="view_applications.php">
+                                <i class="far fa-newspaper"></i>
+                                View applications
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link <?php if ($page == 'categories') { echo 'active'; } ?>" href="admin_main_dashboard.php">
-                                <i class="fas fa-tags"></i> Main Dashboard
+                            <a class="nav-link <?php if ($page == 'user_activity') { echo 'active'; } ?>" href="admin_main_dashboard.php">
+                                <i class="fas fa-chart-line"></i>
+                                main dashboard
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link <?php if ($page == 'user_activity') { echo 'active'; } ?>" href="admin_user_dashboard.php">
-                                <i class="fas fa-chart-line"></i> Manage User
+                            <a class="nav-link <?php if ($page == 'categories') { echo 'active'; } ?>" href="admin_user_dashboard.php">
+                                <i class="fas fa-tags"></i>
+                                manage User
                             </a>
                         </li>
+                        
                         <li class="nav-item">
                             <a class="nav-link <?php if ($page == 'articles') { echo 'active'; } ?>" href="quiz_dashboard.php">
-                                <i class="fas fa-file-alt"></i> Manage Quiz
+                                <i class="fas fa-file-alt"></i>
+                                manage quiz
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link <?php if ($page == 'manage_shows') { echo 'active'; } ?>" href="admin_dashboard_hiringoffer.php">
-                                <i class="fas fa-photo-video"></i> Manage Hiring Offers
+                            <a class="nav-link <?php if ($page == 'manage_shows') { echo 'active'; } ?>" href="admin_polls_dashboard.php">
+                                <i class="fas fa-photo-video"></i>
+                                Manage Polls 
                             </a>
                         </li>
-                       
+                    
                     </ul>
                     
                     <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
@@ -87,7 +94,7 @@
                         <a class="d-flex align-items-center text-muted" href="#">
                             <i class="fas fa-plus-circle"></i>
                         </a>
-                    
+                    </h6>
                 </div>
             </nav>
         </div>

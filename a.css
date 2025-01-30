@@ -1,0 +1,61 @@
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+    75% {
+        transform: translateX(-5px);
+    }
+}
+
+body {
+    transition: background-color 0.3s ease;
+}
+
+.nav-link {
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #fff;
+    background-color: #6f42c1; /* Purple color */
+    animation: shake 0.5s; /* Trigger shake animation */
+}
+
+.nav-item:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+    animation: shake 0.5s; /* Trigger shake animation */
+}
+
+.navbar {
+    transition: background-color 0.3s ease;
+}
+
+.navbar:hover {
+    background-color: #5a3e9b; /* Darker purple shade on hover */
+}
+
+.btn {
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+    background-color: #563d7c; /* Darker purple shade */
+    transform: translateY(-2px);
+    animation: shake 0.5s; /* Trigger shake animation */
+}
+
+.form-control {
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #6f42c1; /* Purple color */
+    box-shadow: 0 0 5px rgba(111, 66, 193, .5);
+}

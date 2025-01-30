@@ -1,0 +1,136 @@
+body {
+    display: flex;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    height: 100vh; /* Full viewport height */
+}
+
+.news-container {
+    display: grid;
+    grid-template-columns: 1fr 300px; /* Main content and sidebar */
+    gap: 30px;
+    max-width: 1300px;
+    width: 100%; /* Full width */
+    height: auto; /* Adjust height dynamically */
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto; /* Enable scrolling if content overflows */
+}
+
+/* Main Content */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Sidebar */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+    margin-top:120px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow-y: auto; /* Enable scrolling for sidebar if content overflows */
+}
+
+.related-article {
+    display: flex;
+    gap: 10px;
+    border-bottom: 1px solid #eaeaea;
+    padding: 10px 0;
+}
+
+.related-article img {
+    width: 80px; /* Thumbnail width */
+    height: auto;
+    border-radius: 5px;
+}
+
+.related-article h4 {
+    font-size: 1em;
+    margin: 0;
+}
+
+.related-article p {
+    font-size: 0.85em;
+    color: #666;
+}
+
+/* Responsive Images */
+img {
+    max-width: 100%; /* Ensure images take the full width available */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Star Rating */
+.star-rating {
+    display: flex;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.star {
+    font-size: 24px;
+    color: #ccc;
+}
+
+.star.selected {
+    color: gold;
+}
+
+/* Styles for Tags and Ratings */
+.tags-rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Inline Images and Description Layout */
+.inline-images {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px; /* Space between image and description */
+}
+
+.inline-images img {
+    width: 500px; /* Set a smaller width for inline images */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.inline-images p {
+    flex: 1; /* Allow the description to take the remaining space */
+    margin: 0; /* Remove default margin */
+    overflow: hidden; /* Hide overflowing text */
+    text-overflow: ellipsis; /* Add ellipsis for overflow */
+    white-space: nowrap; /* Prevent wrapping */
+}
+
+/* Content Layout */
+.content-layout {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+/* Other styles remain unchanged */
+/* Floating Share Button */
+.share-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,168 @@
+/* General Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  color: black; /* Set text color to black */
+  margin: 0;
+  padding: 0;
+  background-color: white; /* Set background to white */
+}
+
+/* Hero Section */
+.quiz-hero {
+  background: #f0f0f0; /* Change background to light gray */
+  height: 150px; /* Decrease height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: black;
+  margin-top: 0; /* Move up the quiz section */
+  margin-bottom: 15px; /* Decrease bottom margin */
+}
+
+.overlay-text h1 {
+  font-size: 2em; /* Decrease font size */
+  margin-bottom: 5px; /* Decrease margin */
+  animation: fadeInUp 2s ease-out;
+  color: purple; /* Title color */
+}
+
+.overlay-text p {
+  font-size: 0.9em; /* Decrease font size */
+  margin-bottom: 15px; /* Decrease margin */
+  animation: fadeInUp 2s ease-out 0.5s;
+  color: black; /* Description text color */
+}
+
+.cta-button {
+  padding: 10px 20px; /* Decrease padding */
+  background-color: purple; /* Button background color */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9em; /* Decrease font size */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: darkviolet; /* Button hover color */
+}
+
+/* Quiz Cards */
+.quiz-cards-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0; /* Decrease padding */
+  flex-wrap: wrap; /* Makes cards wrap on smaller screens */
+}
+
+.quiz-card {
+  width: 180px; /* Decrease width */
+  height: 270px; /* Decrease height */
+  perspective: 1000px;
+  position: relative;
+  margin: 10px; /* Decrease margin */
+  background-color: white; /* Card background color */
+  border: 1px solid purple; /* Card border color */
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* Decrease shadow */
+}
+
+/* Card Faces */
+.quiz-card-front, .quiz-card-back {
+  width: 100%;
+  height: 100%;
+  background-color: white; /* Card face background color */
+  border-radius: 8px;
+  position: absolute;
+  top: 0;
+  backface-visibility: hidden;
+  transition: transform 0.6s ease-in-out; /* Smoother transition */
+}
+
+.quiz-card-front {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: black; /* Front face text color */
+}
+
+.quiz-card-back {
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: black; /* Back face text color */
+}
+
+.quiz-card:hover .quiz-card-front {
+  transform: rotateY(180deg);
+}
+
+.quiz-card:hover .quiz-card-back {
+  transform: rotateY(360deg);
+}
+
+.lock-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  pointer-events: none;
+  color: white; /* Lock overlay text color */
+}
+
+/* Footer */
+.quiz-footer {
+  padding: 15px 0; /* Decrease padding */
+  text-align: center;
+  background-color: white; /* Footer background color */
+  color: black; /* Footer text color */
+}
+
+/* Navbar */
+.navbar {
+  background-color: purple; /* Navbar background color */
+  color: black;
+}
+
+.navbar a {
+  color: black; /* Navbar link color */
+}
+
+.navbar a:hover {
+  color: white; /* Navbar link hover color */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .quiz-hero h1 {
+      font-size: 1.5em; /* Adjust for smaller screens */
+  }
+
+  .quiz-hero p {
+      font-size: 0.8em; /* Adjust for smaller screens */
+  }
+
+  .quiz-cards-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .quiz-card {
+      width: 90%;
+      margin: 8px 0; /* Decrease margin for smaller screens */
+  }
+}
